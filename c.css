@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-wrap: balance;
+
+}
+
+:root {
+    --black: rgba(44, 44, 44, 1);
+    --white: rgba(255, 255, 255, 1);
+    --blue: #00C4F0;
+}
+
+body {
+    background-color: var(--black);
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+header {
+    padding: 36px 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1110px;
+    width: 100%;
+    margin: 0 auto;
+    gap: 16px;
+    flex-wrap: wrap;
+    .navbutton{
+        display: none;
+        
+    }
+}
+
+.logot {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.ltext {
+    color: var(--white);
+    font-family: Oswald;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.links {
+    display: flex;
+    gap: 63px;
+    list-style: none;
+
+    & a {
+        color: var(--white);
+        text-decoration: none;
+        transition: all 0.5s;
+
+        &:hover {
+            color: var(--blue);
+        }
+    }
+    
+}
+
+main {
+    width: 100%;
+}
+
+.firstsection,
+.secondsection {
+    padding: 70px 20px;
+    width: 100%;
+
+    .textfs {
+        font-family: Roboto;
+        margin-bottom: 30px;
+        color: var(--white);
+    }
+    .htext{
+        text-align: center;
+        display: block;
+        margin: 0 auto 70px;
+        font-size: 48px;
+        
+    }
+    .bigtext{
+        font-size: 48px;
+    }
+    .fsb {
+        max-width: 1138px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 48px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        & img {
+            max-width: 432px;
+            max-height: 374px;
+            width: 100%;
+            height: auto;
+        }
+
+        & div {
+            max-width: 458px;
+            width: 100%;
+            & p {
+                font-size: 20px;
+            }
+
+            & button {
+                all: unset;
+                color: black;
+                background-image: linear-gradient(rgba(226, 163, 0, 1), rgba(226, 149, 0, 1));
+                max-width: 224px;
+                height: 47px;
+                width: 100%;
+                text-align: center;
+                border-radius: 6px;
+                cursor: pointer;
+                transition: all 0.2s;
+
+                &:active {
+                    filter: brightness(50%);
+                }
+
+            }
+
+            & h3 {
+                font-size: 30px;
+            }
+        }
+    }
+}
+.secondsection{
+    background-color: rgba(62, 62, 62, 1);
+}
+progress{
+    appearance: none;
+    max-width: 356px;
+    width: 100%;
+    height: 10px;
+    border-radius: 15px;
+    &::-webkit-progress-bar{
+        background-color: var(--blue);
+    }
+    &::-webkit-progress-value{
+        background-color: var(--black);
+    }
+}
+.thirdsection{
+    background-color: var(--black);
+}
+.videot{
+    max-width: 560px;
+    min-height: 315px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 110px auto;
+    border: 20px solid rgba(62, 62, 62, 1);
+    border-radius: 20px;
+}
+.gallery{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 39px 22px;
+    padding: 0 17px;
+    & img{
+        max-width: 478px;
+        width: 100%;
+        height: auto;
+    }
+}
+#lz-box img {
+    max-width: 478px;
+    width: 80%;
+    height: auto;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    width: 100%;
+    padding: 25px 10px;
+    .textfs{
+        color: var(--white);
+    }
+    .footerdiv{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40px;
+        & button{
+            all: unset;
+            width: 50px;
+            height: 50px;
+            & img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}
+@media screen and (max-width:710px) {
+    nav{
+        .navbutton{
+            display: block;
+        }
+    }
+        
+    .links{
+        display: none;
+    }
+    .firstsection,
+    .secondsection {
+        .bigtext{
+            font-size: 36px;
+        }
+        .fsb{
+            justify-content: center;
+            & div{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    }
+}

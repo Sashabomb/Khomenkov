@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="https://wsxzaq127.github.io/style.css">
+    <link rel="stylesheet" href="c.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khomenkov</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logot">
+                <img src="logo.png" alt="">
+                <h1 class="ltext">
+                    Khomenkov
+                </h1>
+            </div>
+            <ul class="links">
+                <li>
+                    <a href="#">
+                        Главная
+                    </a>
+                </li>
+                <li>
+                    <a href="#about">
+                        об авторе
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        видео
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        Галерея
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        контакты
+                    </a>
+                </li>
+            </ul>
+            <button class="navbutton">
+                <img src="exit.png" alt="">
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="firstsection">
+            <div class="fsb">
+                <img src="img.png" alt="">
+                <div>
+                    <h2 class="textfs bigtext">
+                        Я, Большов Александр
+                    </h2>
+                    <p class="textfs">
+                        Я занимаюсь веб-дизайном, front-end и back-end разработкой уже 1 год. Вам нужен дизайн
+                        веб-сайта, верстка сайта или может быть сайт "под ключ"? Тогда свяжитесь со мной
+                    </p>
+                    <button>
+                        Свяжитесь со мной
+                    </button>
+                </div>
+            </div>
+
+        </section>
+        <section class="secondsection" id="about">
+            <h2 class="textfs htext">
+                Об авторе
+            </h2>
+            <div class="fsb">
+                <div>
+                    <h3 class="textfs">
+                        мои навыки
+                    </h3>
+                    <p class="textfs">
+                        html
+                    </p>
+                    <progress max="100" value="45">
+
+                    </progress>
+                    <p class="textfs">
+                        css
+                    </p>
+                    <progress max="100" value="45">
+
+                    </progress>
+                    <p class="textfs">
+                        pixo
+                    </p>
+                    <progress max="100" value="45">
+
+                    </progress>
+                </div>
+
+                <img src="img-group.png" alt="">
+            </div>
+        </section>
+        <section class="secondsection thirdsection">
+            <h2 class="textfs htext">
+                видео
+            </h2>
+            <iframe src="https://www.youtube.com/embed/t3YQkIQpOGM?si=WusIzmH5a9M1G0Nd"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="videot"></iframe>
+        </section>
+        <section class="secondsection foursection">
+            <h2 class="textfs htext">
+                Галерея
+            </h2>
+            <div class="gallery">
+                <a href="img1.png" class="lightzoom"><img src="img1.png" alt=""></a>
+                <a href="img2.png" class="lightzoom"><img src="img2.png" alt=""></a>
+                <a href="img3.png" class="lightzoom"><img src="img3.png" alt=""></a>
+                <a href="img4.png" class="lightzoom"><img src="img4.png" alt=""></a>
+                <a href="img5.png" class="lightzoom"><img src="img5.png" alt=""></a>
+                <a href="img6.png" class="lightzoom"><img src="img6.png" alt=""></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <nav class="footer">
+            <div>
+                <h2 class="textfs">
+                    Саша Большов
+                </h2>
+                <p class="textfs">
+                    2026. Все права защищены.
+                </p>
+            </div>
+            <div class="footerdiv">
+                <a href="">
+                    <button>
+                        <img src="telegram.png" alt="">
+                    </button>
+                </a>
+                <a href="">
+                    <button>
+                        <img src="discord.png" alt="">
+                    </button>
+                </a>
+            </div>
+        </nav>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://wsxzaq127.github.io/lightzoom.js"></script>
+    <script type="text/javascript">
+        jQuery('.lightzoom').lightzoom({ speed: 400, viewTitle: true });
+    </script>
+</body>
+
+</html>
